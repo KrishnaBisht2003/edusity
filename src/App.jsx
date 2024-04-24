@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Components/navbar/Navbar'
 import Hero from './Components/hero/Hero'
 import Projects from './Components/projects/Projects'
+import Gallery from './Components/gallery/Gallery'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Navbar />
       <Hero/>
       <Projects/>
+      <Gallery/>
     </>
   )
 }
