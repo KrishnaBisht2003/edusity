@@ -25,7 +25,7 @@ function VideoPlayer({ isVideoVisible, setVideoVisible }) {
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-90 z-50">
           <div ref={videoRef}>
             <video
-              className="w-full max-w-screen-lg"
+              className="w-full max-w-screen-lg border-4 border-white"
               controls
               autoPlay
               muted
