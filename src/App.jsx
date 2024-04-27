@@ -7,6 +7,8 @@ import Projects from "./Components/projects/Projects";
 import Gallery from "./Components/gallery/Gallery";
 import About from "./Components/About/About";
 import VideoPlayer from "./Components/videoPlayer/videoPlayer";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 export default function App() {
   const [isVideoVisible, setVideoVisible] = useState(false);
@@ -24,6 +26,8 @@ export default function App() {
         isVideoVisible={isVideoVisible}
         setVideoVisible={setVideoVisible}
       />
+      <Contact />
+      <Footer />
     </>
   );
 }

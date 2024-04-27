@@ -7,9 +7,16 @@ import video from "../../assets/video.mp4";
 
 const About = ({ toggleVideo }) => {
   return (
-    <div className="about flex mx-[100px] my-auto justify-between w-[90%]">
-      <div className="about-left flex items-center justify-center basis-[40%] relative px-[5%]">
-        <img src={about_img} alt="" className="  rounded-[10px] w-[100%]" />
+    <div
+      id="about"
+      className=" flex mx-[100px] my-auto justify-between w-[90%] sm:flex-row-reverse"
+    >
+      <div className="about-left sm:order-2 flex items-center justify-center basis-[40%] relative px-[5%]">
+        <img
+          src={about_img}
+          alt=""
+          className="  rounded-[10px] w-[100%] md:order-2"
+        />
         <img
           src={play_icon}
           alt=""
@@ -17,7 +24,7 @@ const About = ({ toggleVideo }) => {
           className=" absolute  w-[60px] top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2"
         />
       </div>
-      <div className="about-right basis-[56%] pr-16 w-auto ml-0 pl-0">
+      <div className="about-right basis-[56%] pr-16 w-auto ml-0 pl-0 md:order-1">
         <h3 className="font-bold text-base text-[#212EA0]">ABOUT UNIVERSITY</h3>
         <h2 className="font-bold text-4xl px-60 pl-0 mb-2">
           Nurturing Tomorrow's Leaders Today

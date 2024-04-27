@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import logo from "../../assets/logo.png";
 import menu from "../../assets/menu-icon.png";
 import Button from "../btn";
@@ -9,7 +10,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY  > 50) {
+      if (window.scrollY > 50) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -29,22 +30,46 @@ function Navbar() {
 
   return (
     <nav
-      className={`z-10 fixed w-full py-[15px] px-[5%] md:px-[10%] m-auto transition duration-500 ${scrolling ? "bg-[#212ea0]" : "bg-transparent"
-        }`}
+      className={`z-10 fixed w-full py-[15px] px-[5%] md:px-[10%] m-auto transition duration-500 ${
+        scrolling ? "bg-[#212ea0]" : "bg-transparent"
+      }`}
     >
       <div className="flex max-w-7xl mx-auto justify-between items-center p-[4px]">
         <img className="w-[140px] sm:w-[180px]" src={logo} alt="logo"></img>
         <ul className="hidden md:flex justify-between font-Montserrat text-[16px] py-[4px] items-center text-white">
-          <li className="mx-3 cursor-pointer">Home</li>
-          <li className="mx-3 cursor-pointer">Program</li>
-          <li className="mx-3 cursor-pointer">About us</li>
-          <li className="mx-3 cursor-pointer">Campus</li>
-          <li className="mx-3 cursor-pointer">Testimonials</li>
+          <li className="mx-3 cursor-pointer">
+            <Link to="Hero" smooth={true} offset={-150} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link to="projects" smooth={true} offset={-90} duration={500}>
+              Program
+            </Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link to="about" smooth={true} offset={-150} duration={500}>
+              About us
+            </Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link to="gallery" smooth={true} offset={-90} duration={500}>
+              Campus
+            </Link>
+          </li>
+          <li className="mx-3 cursor-pointer">
+            <Link>Testimonials</Link>
+          </li>
           <li className="mx-3 ">
-            <Button>Contact Us</Button>
+            <Link to="contact" smooth={true} offset={-260} duration={500}>
+              <Button>Contact Us</Button>
+            </Link>
           </li>
         </ul>
-        <div className="w-[30px] flex md:hidden cursor-pointer" onClick={handleNav}>
+        <div
+          className="w-[30px] flex md:hidden cursor-pointer"
+          onClick={handleNav}
+        >
           <img src={menu} alt="menu"></img>.
         </div>
         <div
