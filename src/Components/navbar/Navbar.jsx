@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import {Link} from "react-scroll";
 import logo from "../../assets/logo.png";
 import menu from "../../assets/menu-icon.png";
 import Button from "../btn";
