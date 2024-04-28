@@ -24,7 +24,7 @@ function Testimonial() {
     nextArrow: (
       <div className="absolute top-1/2 right-4 transform -translate-y-1/2">
         <div className='bg-[#212EA0] flex items-center rounded-full w-full'>
-          <MdArrowForward className="m-0 rounded-full" size={25} color="white" />
+          <MdArrowForward className="m-0 rounded-full " size={25} color="white" />
         </div>
       </div>
     ),
@@ -32,10 +32,10 @@ function Testimonial() {
 
   return (
     
-    <div className="mx-[5%] lg:mx-[10%] max-w-[1200px] relative">
+    <div className="mx-[5%] lg:mx-[10%]  relative">
       <div className='w-[90%] mx-auto '>
         <div className='flex flex-col items-center' >
-                <p className='text-[15px] mt-[70px] font-sans text-[#212ea0] font-bold'>TESTIMONIALS</p>
+                <p className='text-[15px] mt-[30px] font-sans text-[#212ea0] font-bold'>TESTIMONIALS</p>
                 <h2 className='text-[32px] text-[##000f38] mt-[5px] font-bold'>What Student Says</h2>
         </div>
         <Slider className='my-[80px]' {...settings} ref={sliderRef}>

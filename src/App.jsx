@@ -9,6 +9,7 @@ import About from "./Components/About/About";
 import VideoPlayer from "./Components/videoPlayer/videoPlayer";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Testimonial from "./Components/testimanials/Testimonial";
 
 export default function App() {
   const [isVideoVisible, setVideoVisible] = useState(false);
@@ -26,6 +27,7 @@ export default function App() {
         isVideoVisible={isVideoVisible}
         setVideoVisible={setVideoVisible}
       />
+      <Testimonial />
       <Contact />
       <Footer />
     </>

@@ -41,67 +41,71 @@ const Contact = () => {
           Get in Touch
         </h2>
       </div>
-      <div
-        id="contact"
-        className="contact my-[80px] mx-auto max-w-[90%] flex items-center justify-between"
-      >
-        <div className="contact-col basis-[48%] text-[#676767]">
-          <h3 className="text-[#000f38] font-medium text-[25px] flex items-center mb-[20px]">
-            Send us a message{" "}
-            <img src={msg_icon} alt="" className="w-[35px] ml-3" />
-          </h3>
-          <p className="max-w-[450px] leading-[1.3]">
-            Feel free to reach out through contact form or find our contact
-            information below. Your feedback, questions, and suggestions are
-            important to us as we strive to provide exceptional service to our
-            university community.
-          </p>
-          <ul>
-            <li className="flex items-center my-[20px] mx-0">
-              <img src={mail_icon} alt="" className="w-[25px] mr-3" />
-              Contact@GreatStack.dev
-            </li>
-            <li className="flex items-center my-[20px] mx-0">
-              <img src={phone_icon} alt="" className="w-[25px] mr-3" />
-              +1 123-456-7890
-            </li>
-            <li className="flex items-center my-[20px] mx-0">
-              <img src={location_icon} alt="" className="w-[25px] mr-3" />
-              77 Massachusetts Ave, Cambridge MA 02139, United States
-            </li>
-          </ul>
-        </div>
-        <div className="contact-col  basis-[48%] text-[#676767]">
-          <form onSubmit={onSubmit}>
-            <label> Your name </label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              name="name"
-              required
-              className="block w-full bg-[#EBECFE] p-[15px] mb-[15px] mt-[5px] resize-none"
-            />
-            <label> Phone Number </label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Enter your mobile number"
-              required
-              className="block w-full bg-[#EBECFE] p-[15px] mb-[15px] mt-[5px] resize-none"
-            />
-            <label> Write your message here </label>
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Enter your message"
-              required
-              className="block w-full bg-[#EBECFE] p-[15px] mb-[15px] mt-[5px] resize-none"
-            ></textarea>
-            <Button type="submit" color="#212ea0" text="white" flagImg={true}>
-              Submit now
-            </Button>
-          </form>
-          <span className="block my-5 mx-0">{result}</span>
+
+      <div className="max-w-[1200px] mx-[5%] md:mx-[10%] m-auto">
+
+        <div
+          id="contact"
+          className="contact my-[80px] mx-auto max-w-[90%] flex flex-col sm:flex-row justify-between"
+        >
+          <div className=" basis-[48%] text-[#676767]">
+            <h3 className="text-[#000f38] font-medium text-[25px] flex items-center mb-[20px]">
+              Send us a message{" "}
+              <img src={msg_icon} alt="" className="w-[35px] ml-3" />
+            </h3>
+            <p className="max-w-[450px] leading-[1.3] text-justify">
+              Feel free to reach out through contact form or find our contact
+              information below. Your feedback, questions, and suggestions are
+              important to us as we strive to provide exceptional service to our
+              university community.
+            </p>
+            <ul>
+              <li className="flex items-center my-[20px] mx-0">
+                <img src={mail_icon} alt="" className="w-[25px] mr-3" />
+                Contact@GreatStack.dev
+              </li>
+              <li className="flex items-center my-[20px] mx-0">
+                <img src={phone_icon} alt="" className="w-[25px] mr-3" />
+                +1 123-456-7890
+              </li>
+              <li className="flex items-center my-[20px] mx-0">
+                <img src={location_icon} alt="" className="w-[25px] mr-3" />
+                77 Massachusetts Ave, Cambridge MA 02139, United States
+              </li>
+            </ul>
+          </div>
+          <div className="w-full pt-[30px] sm:pt-0 sm:basis-[48%] text-[#676767]">
+            <form onSubmit={onSubmit}>
+              <label> Your name </label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="name"
+                required
+                className="flex w-full m-auto bg-[#EBECFE] p-[15px] mb-[15px]  mt-[5px] resize-none"
+              />
+              <label> Phone Number </label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Enter your mobile number"
+                required
+                className="block w-full bg-[#EBECFE] p-[15px] mb-[15px] mt-[5px] resize-none"
+              />
+              <label> Write your message here </label>
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Enter your message"
+                required
+                className="block w-full bg-[#EBECFE] p-[15px] mb-[15px] mt-[5px] resize-none"
+              ></textarea>
+              <Button type="submit" color="#212ea0" text="white" flagImg={true}>
+                Submit now
+              </Button>
+            </form>
+            <span className="block my-5 mx-0">{result}</span>
+          </div>
         </div>
       </div>
     </>

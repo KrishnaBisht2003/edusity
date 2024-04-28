@@ -7,41 +7,42 @@ import video from "../../assets/video.mp4";
 
 const About = ({ toggleVideo }) => {
   return (
+    <div className="flex px-[5%] lg:px-[10%] m-auto ">
     <div
       id="about"
-      className=" flex mx-[100px] my-auto justify-between w-[90%] sm:flex-row-reverse"
+      className=" flex flex-col-reverse justify-between m-auto w-[90%] md:flex-row"
     >
-      <div className="about-left sm:order-2 flex items-center justify-center basis-[40%] relative px-[5%]">
+      <div className="about-left flex items-center  justify-center basis-[40%] relative ">
         <img
           src={about_img}
           alt=""
-          className="  rounded-[10px] w-[100%] md:order-2"
+          className="  rounded-[10px] w-[100%] "
         />
         <img
           src={play_icon}
           alt=""
           onClick={toggleVideo}
-          className=" absolute  w-[60px] top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2"
+          className=" absolute cursor-pointer w-[60px] top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2"
         />
       </div>
-      <div className="about-right basis-[56%] pr-16 w-auto ml-0 pl-0 md:order-1">
+      <div className="about-right basis-[56%] ml-[20px]  ">
         <h3 className="font-bold text-base text-[#212EA0]">ABOUT UNIVERSITY</h3>
         <h2 className="font-bold text-4xl px-60 pl-0 mb-2">
           Nurturing Tomorrow's Leaders Today
         </h2>
 
-        <p className="text-[#676767] mb-4">
+        <p className="text-[#676767] text-justify mb-4">
           Embark on a transformative educational journey with our university's
           comprehensive education programs. Our cutting-edge curriculum is
           designed to empower students with the knowledge, skills, and
           experiences needed to excel in the dynamic field of education.
         </p>
-        <p className="text-[#676767] mb-4">
+        <p className="text-[#676767] text-justify mb-4">
           With a focus on innovation, hands-on learning, and personalized
           mentorship, our programs prepare aspiring educators to make a
           meaningful impact in classrooms, schools, and communities.
         </p>
-        <p className="text-[#676767] mb-4">
+        <p className="text-[#676767] text-justify mb-4">
           Whether you aspire to become a teacher, administrator, counselor, or
           educational leader, our diverse range of programs offers the perfect
           pathway to achieve your goals and unlock your full potential in
@@ -55,6 +56,7 @@ const About = ({ toggleVideo }) => {
           Your browser does not support the video tag.
         </video>
       </div> */}
+    </div>
     </div>
   );
 };
