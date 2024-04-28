@@ -9,9 +9,8 @@ function Gallery() {
   return (
     <div className='flex flex-col px-[5%] lg:px-[10%] m-auto items-center'>
         <div className='flex flex-col text-center'>
-            <p className='text-[#212ea0] text-[20px] font-sans font-semibold'>Gallery</p>
-            <h2 className='text-[#000f38] text-[32px] font-sans font-bold'>Campus Photos</h2>
-
+        <p className='text-[15px] mt-[70px] font-sans text-[#212ea0] font-bold'>GALLERY</p>
+                <h2 className='text-[32px] text-[##000f38] mt-[5px] font-bold'>Campus Photos</h2>
         </div>
         <div className='my-[80px] '>
 

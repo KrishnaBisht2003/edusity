@@ -18,7 +18,7 @@ const Button = ({ children = "btn", color = "#ffff", text = "black", flagImg = f
         {children}
         <span>
           {flagImg && (
-            <img className = "" src={(text === "black") ? "src/assets/dark-arrow.png" : "src/assets/white-arrow.png"} alt="" className="h-3 ml-2" />
+            <img src={(text === "black") ? "src/assets/dark-arrow.png" : "src/assets/white-arrow.png"} alt="" className="h-3 ml-2" />
           )}
         </span>
       </button>
